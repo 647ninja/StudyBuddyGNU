@@ -23,6 +23,6 @@ with open("topics.txt", "r") as f:
   a = f.readlines()
 print("Let's study, how about?:",random.choice(a)),
 input("Press Enter to Start timer")
-countdown(1),
+countdown(30),
 import subprocess as s
 s.call(['notify-send','Well done!, Have a Great Day!']),print('\a')
