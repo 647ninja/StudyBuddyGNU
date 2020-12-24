@@ -2,12 +2,13 @@
 # Author: R.
 # Original creation date: 2020-12-19
 # Version: 2
-# Updated: 2020-12-21
+# Updated: 2020-12-24
 
 #!/usr/bin/env python3
 import random
 import time
 import sys
+import subprocess as s
 
 def countdown(mins, secs=0):
     t = (mins*60) + secs
@@ -24,5 +25,4 @@ with open("topics.txt", "r") as f:
 print("Let's study, how about?:",random.choice(a)),
 input("Press Enter to Start timer")
 countdown(30),
-import subprocess as s
 s.call(['notify-send','Well done!, Have a Great Day!']),print('\a')
